@@ -22,10 +22,9 @@ function validateEmail(answer) {
     if (regex.test(answer)) {
         return true;
     } else {
-        console.log('\x1B[31mPlease enter a valid email address.\x1B[31');
+        console.log('\x1B[31m Please enter a valid email address. \x1B[31');
         return false;
     }
-    return true;
 }
 
 // Create an array of questions for user input including Title, Description, Installation instructions, Usage instructions, Contribution Guidelines, Test Instructions, and License.
@@ -99,7 +98,6 @@ const questions =
 
 // Create a function to write README file
 function writeToFile(fileName, content) {
-    // TODO: Parse JSON file to write in .md format 
     fs.writeFile(`./output/${fileName}`, content, (err) => {
         err ? console.log(err) : console.log(`Success! Data written to: ./output/${fileName}`);
     });
@@ -109,7 +107,7 @@ function writeToFile(fileName, content) {
 function init() {
     console.log("Welcome to the README Generator. Let's get started with some information about your project!");
     
-    // Retrieve user's input using the inquirer package
+    // Prompt the user with the questions and then write data into 'README.md'
     inquirer.prompt(questions)
     .then((data) => {
         // Call the writeToFile function to write the content into the output file
