@@ -10,12 +10,20 @@ function renderLicenseLink(license) {}
 // If there is no license, return an empty string
 function renderLicenseSection(license) {}
 
-// TODO: Create a function to generate markdown for README
+// Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
 
 ## Description
 ${data.description}
+
+## Table of Contents 
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contribution Guidelines](#contribution-guidelines)
+- [Testing](#testing)
+- [Questions](#questions)
+- [License](#License)
 
 ## Installation 
 ${data.installation}
@@ -30,8 +38,9 @@ ${data.contribution}
 ${data.test}
 
 ## Questions
-My GitHub profile can be found [here](https://github.com/${data.username})
-For any related questions, please contact me via email at ${data.email}
+This project was created by @${data.username}  
+My GitHub profile can be found [here](https://github.com/${data.username})  
+For any related questions, please contact me via email at [${data.email}]
 
 ## License 
 This GitHub repository is licensed under the ${data.license} license.
