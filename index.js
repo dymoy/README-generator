@@ -2,17 +2,22 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-// TODO: Create an array of questions for user input
+// Create an array of questions for user input
 const questions = {
     // Title 
-    "title": "What is the name of your project?",
-    // TODO: Description
-    "description": "Provide a description of your project!"
-    // TODO: Installation Instructions 
-    // TODO: Usage Instructions 
-    // TODO: Contribution Guidelines 
-    // TODO: Test Instructions 
-    // TODO: License (from a list of options)
+    'title': 'What is the name of your project?',
+    // Description
+    'description': 'Provide a short description explaining the what, why, and how of your project. What is the purpose or motivation?',
+    // Installation Instructions 
+    'installation': 'What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.',
+    // Usage Instructions 
+    'usage': 'Provide instructions and examples for use.',
+    // Contribution Guidelines 
+    'contribution': 'Is this project open for contribution? If so, provide guidelines on how others can contribute!',
+    // Test Instructions 
+    'test': 'Did you write any test scripts? If so, provide instructions on how to run them!',
+    // License
+    'license': 'What license should we add to this project?'
 }
 
 
@@ -41,6 +46,7 @@ function init() {
         },
     ])
     .then((data) => {
+        // Call the writeToFile function to write the content into the output file
         const fileName = 'README.md';
         writeToFile(fileName, data);
     });
