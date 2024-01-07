@@ -22,7 +22,7 @@ function validateEmail(answer) {
     if (regex.test(answer)) {
         return true;
     } else {
-        console.log('\x1B[31mPlease enter a valid email address.\x1B[31');
+        console.log('\x1B[31m Please enter a valid email address. \x1B[31');
         return false;
     }
     return true;
