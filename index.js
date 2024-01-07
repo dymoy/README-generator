@@ -111,7 +111,7 @@ function init() {
     inquirer.prompt(questions)
     .then((data) => {
         // Call the writeToFile function to write the content into the output file
-        const fileName = 'README.md';
+        const fileName = 'READMETest.md';
         const content = generateMarkdown(data);
         writeToFile(fileName, content);
     });
