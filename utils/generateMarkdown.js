@@ -29,6 +29,10 @@ ${data.contribution}
 ## Testing 
 ${data.test}
 
+## Questions
+My GitHub profile can be found [here](https://github.com/${data.username})
+For any related questions, please contact me via email at ${data.email}
+
 ## License 
 This GitHub repository is licensed under the ${data.license} license.
 `;
