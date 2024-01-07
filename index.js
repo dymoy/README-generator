@@ -25,7 +25,6 @@ function validateEmail(answer) {
         console.log('\x1B[31m Please enter a valid email address. \x1B[31');
         return false;
     }
-    return true;
 }
 
 // Create an array of questions for user input including Title, Description, Installation instructions, Usage instructions, Contribution Guidelines, Test Instructions, and License.
