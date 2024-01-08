@@ -85,7 +85,7 @@ const questions = [
     {
         type: 'input',
         name: 'test',
-        message: 'Did you write any test scripts? If so, provide instructions on how to run them!Press Enter to default to N/A.',
+        message: 'Did you write any test scripts? If so, provide instructions on how to run them! Press Enter to default to N/A.',
         default: 'N/A'
     },
     {
