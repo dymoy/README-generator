@@ -7,17 +7,17 @@ When creating an open source project on GitHub, it’s important to have a high-
 This command-line application assists with quickly and easily creating a professional README file for your project. 
 
 ## Table of Contents 
-- [Installation](#Installation)
-- [Usage](#Usage)
-- [Contributing](#Contributing)
-- [Testing](#Testing)
-- [License](#License)
-- [Questions](#Questions)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Testing](#testing)
+- [License](#license)
+- [Questions](#questions)
 
 ## Installation 
 1. Clone this repository to your local machine. (For reference, visit the [Cloning a Repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) GitHub Docs article.)
 2. Run `npm install` in your CLI to download the npm package dependencies. 
-3. Run `node index.js` on your CLI to run the application (You will need [NodeJS](https://nodejs.org/en) installed).
+3. Run `node index.js` on your CLI to run the application.
 
 ## Usage 
 When the program is initialized, you will be prompted to answer a series of questions about your project. This includes the title, a short description, installation instructions (if any), usage instructions, how to make contributions, any testing instructions, the license information, and and contact information for questions.  
