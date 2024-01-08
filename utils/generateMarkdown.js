@@ -1,4 +1,9 @@
-// Create a function that returns a license badge based on which license is passed in. If there is no license, return an empty string
+/**
+ * Create a function that retuns a license badge based on which license is passed in.
+ * If there is no license, return an empty string.
+ * @param {String} license - The license chosen with inquirer.
+ * @returns {String} badge - The .svg file associated with the license badge.
+ */
 function renderLicenseBadge(license) {
   var badge;
 
@@ -32,7 +37,12 @@ function renderLicenseBadge(license) {
   return `https://img.shields.io/badge/License-${badge.name}-${badge.color}.svg`;
 }
 
-// Create a function that returns the license link. If there is no license, return an empty string.
+/**
+ * Create a function that returns the license link. 
+ * If there is no license, return an empty string.
+ * @param {String} license - The license chosen with inquirer.
+ * @returns {String} link - The link the license documentation. 
+ */
 function renderLicenseLink(license) {
   var link = '';
 
@@ -63,7 +73,11 @@ function renderLicenseLink(license) {
   return link
 }
 
-// Create a function to generate markdown for README
+/**
+ * Create a function to generate markdown for README.
+ * @param {JSON} data - The JSON object that includes the answers provided to inquirer.
+ * @returns {String} - The markdown content to write.
+ */
 function generateMarkdown(data) {
   const licenseLink = renderLicenseLink(data.license);
   const licenseBadge = renderLicenseBadge(data.license);
@@ -98,10 +112,10 @@ ${data.test}
 This GitHub repository is licensed under the ${data.license} license. Please refer to the license documentation [here](${licenseLink}).
 
 ## Questions
-This project was created by @${data.username}  
-My GitHub profile can be found [here](https://github.com/${data.username}).  
-For any related questions, please contact me via email at [${data.email}]()
+This project was created by [${data.username}](https://github.com/${data.username}).
+For any related questions, please contact me via email at <${data.email}>.
 `;
 }
 
+/* Export the generateMarkdown function */
 module.exports = generateMarkdown;
