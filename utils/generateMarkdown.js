@@ -89,12 +89,12 @@ function generateMarkdown(data) {
 ${data.description}
 
 ## Table of Contents 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contribution Guidelines](#contribution-guidelines)
-- [Testing](#testing)
-- [Questions](#questions)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Contributing](#Contributing)
+- [Testing](#Testing)
 - [License](#License)
+- [Questions](#Questions)
 
 ## Installation 
 ${data.installation}
@@ -102,7 +102,7 @@ ${data.installation}
 ## Usage 
 ${data.usage}
 
-## Contribution Guidelines
+## Contributing
 ${data.contribution}
 
 ## Testing 
@@ -112,7 +112,7 @@ ${data.test}
 This GitHub repository is licensed under the ${data.license} license. Please refer to the license documentation [here](${licenseLink}).
 
 ## Questions
-This project was created by [${data.username}](https://github.com/${data.username}).
+This project was created by [${data.username}](https://github.com/${data.username}).  
 For any related questions, please contact me via email at <${data.email}>.
 `;
 }
