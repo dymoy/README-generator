@@ -3,6 +3,7 @@
 
 ## Description 
 When creating an open source project on GitHub, it’s important to have a high-quality README for the app. This should include what the app is for, how to use the app, how to install it, how to report issues, and how to make contributions—this last part increases the likelihood that other developers will contribute to the success of the project.  
+  
 This command-line application assists with quickly and easily creating a professional README file for your project. 
 
 ## Table of Contents 
@@ -20,6 +21,7 @@ This command-line application assists with quickly and easily creating a profess
 
 ## Usage 
 When the program is initialized, you will be prompted to answer a series of questions about your project. This includes the title, a short description, installation instructions (if any), usage instructions, how to make contributions, any testing instructions, the license information, and and contact information for questions.  
+  
 Once all the questions have been answered, `fs.writeFile()` is used to generate a markdown file based on your answers. The generated file will be written to the relative ./output directory.  
   
 ### Screenshot of CLI on Use 
