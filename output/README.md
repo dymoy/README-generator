@@ -1,8 +1,8 @@
 # README Generator  
-[![License](https://img.shields.io/badge/License-BSD_3--Clause-orange.svg)](https://opensource.org/licenses/BSD-3-Clause)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-This tool assists with generating a professional README markdown file for your project.
+This tool assists with creating a professional README markdown file for your project.
 
 ## Table of Contents 
 - [Installation](#installation)
@@ -16,18 +16,17 @@ This tool assists with generating a professional README markdown file for your p
 Clone this repository to your local machine. Run `npm install` in your CLI to download the npm package dependencies. Run `node index.js` on your CLI to run the program.
 
 ## Usage 
-When the program is initialized, you will be prompted to answer a series of questions about your project. Once all the questions have been answered, `fs.writeFile()` is used to generate a markdown file based on your answers.
+When the program is initialized, you will be prompted to answer a series of questions about your project. Once all the questions have been answered, `fs.writeFile()` is used to generate a markdown file based on your answers. The generated file will be written to the ./output directory.
 
 ## Contribution Guidelines
-N/A
+Fork the repository, make some commits to improve the project, and open a pull request. We may discuss your changes and merge the pull request once approved.
 
 ## Testing 
 N/A
 
 ## License 
-This GitHub repository is licensed under the BSD 3-Clause license. Please refer to the license documentation [here](https://opensource.org/licenses/BSD-3-Clause).
+This GitHub repository is licensed under the MIT license. Please refer to the license documentation [here](https://opensource.org/licenses/MIT).
 
 ## Questions
-This project was created by @dymoy  
-My GitHub profile can be found [here](https://github.com/dymoy).  
-For any related questions, please contact me via email at [derekymoy@gmail.com]()
+This project was created by [dymoy](https://github.com/dymoy).
+For any related questions, please contact me via email at <derekymoy@gmail.com>.
