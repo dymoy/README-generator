@@ -7,12 +7,16 @@ When creating an open source project on GitHub, it’s important to have a high-
 This command-line application assists with quickly and easily creating a professional README file for your project. 
 
 ## Table of Contents 
+- [Walkthrough Video](#walkthrough-video)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [Testing](#testing)
 - [License](#license)
 - [Questions](#questions)
+
+## Walkthrough Video 
+Click the following link to view a walktrhough video on the usage of the application: [README Generator Video](https://drive.google.com/file/d/1vQWyA3E6_JYUQxsksJDNs-X7tYqKifPc/view)  
 
 ## Installation 
 1. Clone this repository to your local machine. (For reference, visit the [Cloning a Repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) GitHub Docs article.)
